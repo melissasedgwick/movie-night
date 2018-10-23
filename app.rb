@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require './lib/movies'
 
 class MovieNight < Sinatra::Base
   get '/' do
@@ -6,6 +7,7 @@ class MovieNight < Sinatra::Base
   end
 
   get '/movie-list' do
+    @movie_list = Movies.all
     erb :movie_list
   end
 

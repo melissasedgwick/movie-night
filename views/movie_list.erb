@@ -1,7 +1,13 @@
 <h1>List of movies</h1>
 
-<ul>
+<!-- <ul>
   <li>Pulp Fiction</li>
   <li>Rush Hour</li>
   <li>Incidious</li>
+</ul> -->
+
+<ul>
+  <% @movie_list.each do |movie| %>
+    <li><%= movie %></li>
+  <% end %>
 </ul>
