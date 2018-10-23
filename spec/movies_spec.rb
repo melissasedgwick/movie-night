@@ -4,9 +4,9 @@ describe Movies do
 
   subject(:movie) { described_class.new }
 
-  describe '#all' do
+  describe '#all_movies' do
     it 'returns a list of movies' do
-      movie_list = movie.all
+      movie_list = movie.all_movies
       expect(movie_list).to include('Rush Hour')
       expect(movie_list).to include('Pulp Fiction')
       expect(movie_list).to include('Incidious')

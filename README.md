@@ -9,7 +9,7 @@ So I can view movies
 I want to be able to see a list of movies
 
 As a movie lover
-So I can find a film to watch
+So I can find a movie to watch
 I'd like to receive a random movie title
 ```
 

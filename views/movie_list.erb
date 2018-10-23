@@ -1,7 +1,7 @@
 <h1>List of movies</h1>
 
 <ul>
-  <% @movies.all.each do |movie| %>
+  <% @movies.all_movies.each do |movie| %>
     <li><%= movie %></li>
   <% end %>
 </ul>
@@ -13,5 +13,5 @@
 </form>
 
 <span id="random_movie">
-  <%= @movies.film_choice %>
+  <%= @movies.movie_choice %>
 </span>
