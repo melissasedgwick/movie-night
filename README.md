@@ -16,4 +16,3 @@ As a movie lover
 So I can find a film to watch
 I'd like to receive a random movie title
 ```
-Test
