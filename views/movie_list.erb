@@ -1,13 +1,17 @@
 <h1>List of movies</h1>
 
-<!-- <ul>
-  <li>Pulp Fiction</li>
-  <li>Rush Hour</li>
-  <li>Incidious</li>
-</ul> -->
-
 <ul>
-  <% @movie_list.each do |movie| %>
+  <% @movies.all.each do |movie| %>
     <li><%= movie %></li>
   <% end %>
 </ul>
+
+<form action="/get-random-movie" method="get">
+  <button type="submit">
+    Random Movie
+  </button>
+</form>
+
+<span id="random_movie">
+  <%= @movies.film_choice %>
+</span>

@@ -1,4 +1,4 @@
-feature 'Viewing movie list' do
+feature 'Feature: Viewing movie list' do
   scenario 'returns a list of movies' do
     visit('/')
     click_link 'Movie list'

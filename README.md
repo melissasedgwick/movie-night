@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-# Movie Night
-
-
-=======
 # Movie Night #
->>>>>>> 101bb33fd7c78771400589b500fb87e580873acd
 
 IMDB API = www.omdapi.com
 
