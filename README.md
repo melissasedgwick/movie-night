@@ -1,6 +1,6 @@
 # Movie Night #
 
-IMDB API = www.omdapi.com
+IMDB API = www.omdbapi.com
 
 ## User Stories ##
 ```
