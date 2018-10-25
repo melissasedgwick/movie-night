@@ -1,14 +1,14 @@
 require 'sinatra/base'
 require './lib/movies'
+require_relative './database_connection_setup.rb'
 
 class MovieNight < Sinatra::Base
 
   before do
-    @movies = Movies.instance
+    @movies = Movies.all
   end
 
   get '/' do
-    @movies = Movies.create
     erb :index
   end
 
@@ -17,7 +17,7 @@ class MovieNight < Sinatra::Base
   end
 
   get '/get-random-movie' do
-    @movies.random_movie
+    Movies.random_movie
     redirect '/movie-list'
   end
 
